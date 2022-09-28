@@ -1,0 +1,52 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DotNetNote
+build_property.RootNamespace = DotNetNote
+build_property.ProjectDir = C:\Users\hr\Desktop\code\c#\DotNetNote\DotNetNote\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\hr\Desktop\code\c#\DotNetNote\DotNetNote
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Blog/BlogDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZ1xCbG9nRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Blog/BlogList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZ1xCbG9nTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRkFRLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Portfolio/Portfolio-item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGZvbGlvXFBvcnRmb2xpby1pdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Portfolio/Portfolio-overview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGZvbGlvXFBvcnRmb2xpby1vdmVydmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/Pricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpY2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
