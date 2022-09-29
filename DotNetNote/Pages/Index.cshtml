@@ -1,16 +1,24 @@
 ﻿@page
 @using DotNetNote.Models
+@using DotNetNote.Services
 @*@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers*@ @*주석처리 ctrl+k+c*@
 @{
     //Layout = "_Layout"; //  _ViewStart.cshtml 에 설정해 놓아서 지정해주지 않아도 괜찮다. 
     //var siteTitle = "My BLOG";
+
     //int[] Blogs = { 1, 2, 3, 4, 5, 6};
-    List<Portfolio> portfolios = new List<Portfolio>()
-    {
-        new Portfolio {Id = 1 , Title = ".net", Description = "asp.net core..."},
-        new Portfolio {Id = 2 , Title = "java", Description = "Spring..."},
-        new Portfolio {Id = 3 , Title = "javascript", Description = "react..."},
-    };
+
+    //인메모리
+    //List<Portfolio> portfolios = new List<Portfolio>()
+    //{
+    //    new Portfolio {Id = 1 , Title = ".net", Description = "asp.net core..."},
+    //    new Portfolio {Id = 2 , Title = "java", Description = "Spring..."},
+    //    new Portfolio {Id = 3 , Title = "javascript", Description = "react..."},
+    //};
+
+    //json파일 
+    var portfolios = (new PortfolioServiceJsonFile()).GetPortfolios();
+
 }
 
 
@@ -174,7 +182,7 @@
                     {
                         <div class="col-lg-4 mb-5" >
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                                <img class="card-img-top img-fluid" src=@portfolio.Image alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
                                     <a class="text-decoration-none link-dark stretched-link" asp-page="/Blog/BlogDetail" asp-route-id=@portfolio.Id><h5 class="card-title mb-3">@portfolio.Title</h5></a>
