@@ -22,6 +22,7 @@ namespace DotNetNote.Services
         {
             get
             {
+                var JsonPath = Path.Combine(_webHostEnvironment.WebRootPath, "Portfolios", "portfolio.json");
                 return _webHostEnvironment.WebRootPath + "\\Portfolios" + "\\portfolio.json";
             }
              
@@ -29,7 +30,7 @@ namespace DotNetNote.Services
 
         public IEnumerable<Portfolio> GetPortfolios() // 파일경로의 json 파일에서 데이터를 읽어와 Model화 시켜서 반환해준다
         {
-            var jsonFileName = @"C:\\Users\\hr\\Desktop\\code\\c#\\DotNetNote\\DotNetNote\\wwwroot\\Portfolios\\portfolio.json";
+           // var jsonFileName = @"C:\\Users\\hr\\Desktop\\code\\c#\\DotNetNote\\DotNetNote\\wwwroot\\Portfolios\\portfolio.json";
 
             using(var jsonFileReader = File.OpenText(JsonFileName))
             {

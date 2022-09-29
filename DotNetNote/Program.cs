@@ -2,9 +2,10 @@ using DotNetNote.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container.     
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<PortfolioServiceJsonFile>(); // 의존성 주입을 (종속성주입) 서비스 등록 하여 사용하겠다.(디팬던시 인덱션)
+//asp.netcore 의 DI 컨테이너에 서비스 등록 하면 클래스 셍성자에 매개변수롤 직접입력안해도 자동으로 인스턴스 생성이 가능함
 
 var app = builder.Build();
 
