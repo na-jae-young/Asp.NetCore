@@ -1,7 +1,12 @@
 ﻿@page
+
+@inject PortfolioServiceJsonFile PortfolioSerVice
+
 @using DotNetNote.Models
 @using DotNetNote.Services
+
 @*@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers*@ @*주석처리 ctrl+k+c*@
+
 @{
     //Layout = "_Layout"; //  _ViewStart.cshtml 에 설정해 놓아서 지정해주지 않아도 괜찮다. 
     //var siteTitle = "My BLOG";
@@ -17,8 +22,11 @@
     //};
 
     //json파일 
-    var portfolios = (new PortfolioServiceJsonFile()).GetPortfolios();
-
+    //var portfolios = (new PortfolioServiceJsonFile()).GetPortfolios(); 
+    // 생성자에 매개변수가 있어야하지만 의존성 주입으로 등록을 해놔서 자동으로 생성되어기때문에 매개변수없이 생성해야하므로 다른방법으로 해야함
+    //@inject PortfolioServiceJsonFile PortfolioSerVice   inject 를 사용해서 의존성주입된 것을 바로 생성해줄수있다. 
+    //PortfolioSerVice 은 PortfolioServiceJsonFile 클래스로 생성된 객채이다. 의존성주입에의해 자동으로 매개변수가 주입되어 생성되었다. 
+    var portfolios = PortfolioSerVice.GetPortfolios();
 }
 
 

@@ -1,7 +1,10 @@
+using DotNetNote.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<PortfolioServiceJsonFile>(); // 의존성 주입을 (종속성주입) 서비스 등록 하여 사용하겠다.(디팬던시 인덱션)
 
 var app = builder.Build();
 
