@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<PortfolioServiceJsonFile>(); // 의존성 주입을 (종속성주입) 서비스 등록 하여 사용하겠다.(디팬던시 인덱션)
 //asp.netcore 의 DI 컨테이너에 서비스 등록 하면 클래스 셍성자에 매개변수롤 직접입력안해도 자동으로 인스턴스 생성이 가능함
+builder.Services.AddServerSideBlazor(); // 블레이져 컴포넌트 사용시 입력 
 
 var app = builder.Build();
 
@@ -16,6 +17,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.MapBlazorHub(); // 블레이저 컴포넌트 사용시 입력 
 
 app.UseHttpsRedirection();
 app.UseStaticFiles(); //정적인 HTML, CSS JS 를 브라우저 상에서 실행하게해주고싶을때   WWWROOT  (미들웨어) 기준은 PAGES 입

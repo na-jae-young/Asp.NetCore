@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hr\Desktop\code\c#\DotNetNote\DotNetNote
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Conponents/PortfolioList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29ucG9uZW50c1xQb3J0Zm9saW9MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hr/Desktop/code/c\#/DotNetNote/DotNetNote/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
